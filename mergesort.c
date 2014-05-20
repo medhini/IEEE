@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <conio.h>
  
- void mergesort(int a[], int l, int h)
+int count=0;
+
+ int mergesort(int a[], int l, int h)
 {
  int i = 0;
  int len = h-l+1 ;
@@ -54,7 +56,7 @@
    a[i + l] = temp[merge1++];
   }
  }
-return;
+return count;
 }
  
  main()
